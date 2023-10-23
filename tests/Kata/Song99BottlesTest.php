@@ -3,15 +3,15 @@
 namespace Kata;
 
 use PHPUnit\Framework\TestCase;
-use Kata\Main;
+use Kata\Song99Bottles;
 
-class MainTest extends TestCase
+class Song99BottlesTest extends TestCase
 {
-    private Main $main;
+    private Song99Bottles $main;
 
     protected function setUp(): void
     {
-        $this->main = new Main();
+        $this->main = new Song99Bottles();
     }
 
     public function testShallPass(): void

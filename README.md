@@ -1,14 +1,45 @@
 # KATA SKELETON DAN THE DEV - PHP VERSION
+## Instructions
+Complete the function that returns the lyrics for the song 99 Bottles of Beer as an array of strings: each line should be a separate element - see the example at the bottom.
 
-## How to use the template
+### Lyrics
+99 bottles of beer on the wall, 99 bottles of beer.
+Take one down and pass it around, 98 bottles of beer on the wall.
 
-Create your own repository starting from the template here on GitHub - give a name meaningful for the Kata exercise.
-The only requirement on your computer are: 
-- [Make](https://www.gnu.org/software/make/)
-- [Docker](https://www.docker.com/)
+98 bottles of beer on the wall, 98 bottles of beer.
+Take one down and pass it around, 97 bottles of beer on the wall.
 
-Then, clone it and install dependencies running the command `make install` from your terminal, in the root folder of the project.
-After dependencies are installed, you can run tests via `make test`.
+...and so on...
 
-From now on, you can start with the Kata. 
-I suggest you refactor names at first: for example, for `FizzBuzz` kata, I renamed the classes to `FizzBuzz` and `FizzBuzzTest`.
+3 bottles of beer on the wall, 3 bottles of beer.
+Take one down and pass it around, 2 bottles of beer on the wall.
+
+2 bottles of beer on the wall, 2 bottles of beer.
+Take one down and pass it around, 1 bottle of beer on the wall.
+
+1 bottle of beer on the wall, 1 bottle of beer.
+Take one down and pass it around, no more bottles of beer on the wall.
+
+No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 99 bottles of beer on the wall.
+
+Example
+`"99 bottles of beer on the wall, 99 bottles of beer.",
+"Take one down and pass it around, 98 bottles of beer on the wall.",
+"98 bottles of beer on the wall, 98 bottles of beer.",
+
+...and so on...
+
+"3 bottles of beer on the wall, 3 bottles of beer.",
+"Take one down and pass it around, 2 bottles of beer on the wall.",
+"2 bottles of beer on the wall, 2 bottles of beer.",
+"Take one down and pass it around, 1 bottle of beer on the wall.",
+"1 bottle of beer on the wall, 1 bottle of beer.",
+"Take one down and pass it around, no more bottles of beer on the wall.",
+"No more bottles of beer on the wall, no more bottles of beer.",
+"Go to the store and buy some more, 99 bottles of beer on the wall." `
+
+
+# Tests
+
+Run tests: `make test`
