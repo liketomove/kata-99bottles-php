@@ -14,13 +14,34 @@ class Song99BottlesTest extends TestCase
         $this->main = new Song99Bottles();
     }
 
-    public function testShallPass(): void
+    public function testShouldReturn99StringOfSong(): void
     {
-        $this->assertEquals(1, 1);
+        $this->assertEquals(
+            '99 bottles of beer on the wall, 99 bottles of beer. Take one down and pass it around, 98 bottles of beer on the wall.',
+            $this->main->handle(99)
+        );
     }
 
-    public function testHandleReturnTrue(): void
+    public function testShouldReturn98StringOfSong(): void
     {
-        $this->assertEquals(true, $this->main->handle());
+        $this->assertEquals(
+            '98 bottles of beer on the wall, 98 bottles of beer. Take one down and pass it around, 97 bottles of beer on the wall.',
+            $this->main->handle(98)
+        );
+    }
+
+    public function testShouldReturn97StringOfSong(): void
+    {
+        $this->assertEquals(
+            '97 bottles of beer on the wall, 97 bottles of beer. Take one down and pass it around, 96 bottles of beer on the wall.',
+            $this->main->handle(97)
+        );
+    }
+
+    public function testShouldReturnMoreStringsOfSong(): void
+    {
+        $this->assertEquals(
+
+        );
     }
 }
